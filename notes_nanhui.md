@@ -74,3 +74,20 @@ Data during April - May 2026 are:
 
 ![](images/atm_cond_pvg_airport_aprilmay2026.png)
 
+***
+
+Steps for atmospheric correction of pressure sensor data:
+
+1. Match timezone (use UTC).
+2. Correct units (conversion: 9.80638 mm h2o@4C= 1 Pa; Atmospheric pressure standard 101325 Pa). 
+3. Subtract atmospheric pressure from wetland sensors. 
+4. Optional: convert to water level, but this needs some density considerations. E.g. use T and C to calculate rho, and use that value to get water level H. 
+
+Steps 1-3 currently in `quick_read_plot_nanhui.m` (though not saving yet).
+
+For sensor 5, the correction looks like this:
+
+![](images/correct_atmospheric_pressure_example_sensor5.png)
+
+
+

@@ -45,11 +45,11 @@ ylim([15 23])
 
 linkaxes(ax,'x')
 
-return;
+% return;
 %%
 clear ax
 close all
-for ix = [3 4 5 7 9 10]
+for ix = 5
     fn = ['~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-',num2str(ix),'.csv'];
     d = readtable(fn);
 
@@ -68,13 +68,34 @@ plot(d.Time,d.Pres_Pa_abs), hold all
 plot(dPVG.time,dPVG.pressurePa,'k')
 
 ts_PVG = datenum(dPVG.time);
-ts_Nanhui = datenum(d.Time);
+ts_Nanhui_utc = datenum(d.Time) - 8/24; % fix time zone here. 
 
-d.PresAtm_PVG_Pa = interp1(ts_PVG,dPVG.pressurePa,ts_Nanhui);
+d.PresAtm_PVG_Pa = interp1(ts_PVG,dPVG.pressurePa,ts_Nanhui_utc);
 
 
  subplot(2,1,2)
 plot(d.Time,d.Pres_Pa_abs-d.PresAtm_PVG_Pa+101325), hold all
+
+
+
+figure(34)
+subplot(3,1,1)
+plot(d.Time,d.Pres_Pa), hold all
+ylabel('Relative Pressure [Pa]')
+legend('Wetland Relative Pressure = P [Pa]')
+subplot(3,1,2)
+plot(d.Time,d.Pres_Pa_abs), hold all
+plot(dPVG.time+hours(8),dPVG.pressurePa,'k'), legend('P_{rel} + 101325 [Pa]','PVG P_{atm} [Pa]')
+ylabel('Absolute Pressure [Pa]')
+
+
+d.PresAtm_PVG_Pa = interp1(ts_PVG,dPVG.pressurePa,ts_Nanhui_utc);
+
+
+subplot(3,1,3)
+plot(d.Time,d.Pres_Pa_abs-d.PresAtm_PVG_Pa+101325), hold all
+ylabel('Absolute Pressure [Pa]')
+legend('Corrected')
 
 end
 linkaxes(ax,'x')
