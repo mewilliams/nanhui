@@ -54,7 +54,8 @@ Script to download the tidal predictions: `downloadNMDISTides.m`
 
 Script to download, and plot: `download_plot_tide_predictions_nanhui.m`
 
-
+Tide predictions for April and May:
+![](images/tideprediction_nanhui.png)
 
 ##### 22 July 2026
 
@@ -62,4 +63,4 @@ Atmospheric data from Shanghai PVG data: uses `downloadWunderground.m` to downlo
 
 Data during April - May 2026 are:
 
-![](../images/atm_cond_pvg_airport_aprilmay2026.png)
+![](images/atm_cond_pvg_airport_aprilmay2026.png)
