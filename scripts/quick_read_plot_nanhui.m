@@ -15,11 +15,11 @@ dPVG.wspd_ms = dPVG.wspd*0.44704; % mph to meters per second (wind)
 
 
 
-d = readtable('~/Research/tongji/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-12.csv');
-d = readtable('~/Research/tongji/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-1.csv');
+d = readtable('~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-12.csv');
+d = readtable('~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-1.csv');
 
 for ix = 1:12
-    fn = ['~/Research/tongji/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-',num2str(ix),'.csv'];
+    fn = ['~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-',num2str(ix),'.csv'];
 
     d = readtable(fn);
     d.Pres_Pa = d.Pressure_WaterLevel_mmH_O_4_C_*conv_mmh2o_Pa; % conversion mm h2o to pascals
@@ -50,7 +50,7 @@ return;
 clear ax
 close all
 for ix = [3 4 5 7 9 10]
-    fn = ['~/Research/tongji/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-',num2str(ix),'.csv'];
+    fn = ['~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-',num2str(ix),'.csv'];
     d = readtable(fn);
 
     d.Pres_Pa = d.Pressure_WaterLevel_mmH_O_4_C_*conv_mmh2o_Pa; % conversion mm h2o to pascals
