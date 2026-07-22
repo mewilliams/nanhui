@@ -39,7 +39,9 @@ apiKey);
 
 ###### Tides
 
-Tide data? Tidal predictions close to the wetland at the site: https://mds.nmdis.org.cn/pages/tidalCurrent.html 
+Tide data? There are oceanic data via the National Marine Data Center: https://mds.nmdis.org.cn
+
+Tidal predictions close to the wetland at the site: https://mds.nmdis.org.cn/pages/tidalCurrent.html 
 
 Select predictions for: 芦潮港(南汇嘴)
 
