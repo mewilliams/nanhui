@@ -70,9 +70,17 @@ Use the tide data to verify the timezone of the raw data. Shanghai local time is
 
 Atmospheric data from Shanghai PVG data: uses `downloadWunderground.m` to download airport (historic) data from https://www.wunderground.com/weather/ZSPD, saves as csv in external data folder. 
 
+Script to plot: `plot_pvg_weather.m`
+
 Data during April - May 2026 are:
 
 ![](images/atm_cond_pvg_airport_aprilmay2026.png)
+
+
+Converting wind speed and direction to U and V (looking because there is a water level anomaly on 4 May):
+
+![](images/wind_velocityUV_speed_2to9may2026_pvg.png)
+
 
 ***
 
@@ -88,6 +96,15 @@ Steps 1-3 currently in `quick_read_plot_nanhui.m` (though not saving yet).
 For sensor 5, the correction looks like this:
 
 ![](images/correct_atmospheric_pressure_example_sensor5.png)
+
+Applying the atmospheric correction to all the sensors, want to check water level offset.. The sensors should all be the same when they are out of the water. They are not (quite): 
+
+![](images/indivual_sensor_offset_start.png)
+![](images/indivual_sensor_offset_end.png)
+
+Questions: 
+
+-  How does the sensor zero the pressure? I assumed/guessed standard atmosphere, but it might take a reading at the moment of start and zero from there. 
 
 
 
