@@ -59,6 +59,13 @@ Script to download, and plot: `download_plot_tide_predictions_nanhui.m`
 Tide predictions for April and May:
 ![](images/tideprediction_nanhui.png)
 
+***
+
+Use the tide data to verify the timezone of the raw data. Shanghai local time is UTC+8. Comparing water level and tide predictions (with known timezone) shows that the raw data are in local time.
+
+![](images/timezone_check_data_nanhui.png)
+
+
 ##### 22 July 2026
 
 Atmospheric data from Shanghai PVG data: uses `downloadWunderground.m` to download airport (historic) data from https://www.wunderground.com/weather/ZSPD, saves as csv in external data folder. 
