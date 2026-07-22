@@ -20,7 +20,8 @@ dPVG.wspd_ms = dPVG.wspd*0.44704; % mph to meters per second (wind)
 d = readtable('~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-12.csv');
 d = readtable('~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-1.csv');
 
-for ix = 1:12
+ixl = 1;
+for ix = [ 3 7 9 12 ]
     fn = ['~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-',num2str(ix),'.csv'];
 
     d = readtable(fn);
@@ -37,7 +38,8 @@ for ix = 1:12
     plot(d.Time,d.Conductivity__S_cm_), hold all
     ylabel('C [S/cm]')
 
-    legentry{ix} = ['site ',num2str(ix)];
+legentry{ixl} = ['site ',num2str(ix)]
+ixl = ixl+1; % legend entry without having to start at index ix = 1.
 end
 
 legend(legentry)
