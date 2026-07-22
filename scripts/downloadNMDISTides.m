@@ -87,7 +87,9 @@ fname = sprintf('%s_%s_to_%s_tides.csv', ...
     datestr(startDate,'yyyymmdd'), ...
     datestr(endDate,'yyyymmdd'));
 
-writetable(Tall,fname)
+floc = '../external_data/';
+
+writetable(Tall,[floc fname])
 
 fprintf('\nSaved:\n%s\n',fname)
 
