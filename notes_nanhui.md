@@ -4,7 +4,7 @@
 
 Quickly look at data from Nanhui wetland. There are 12 sensors, recording pressure, temperature, and conductivity at the locations:
 
-![](Sampling_Data_of_Nanhui_Tidal_Flat/2026.5.21\ UAV\ Aerial\ Survey\ Point\ Distribution\ Map-1.png)
+![](Sampling_Data_of_Nanhui_Tidal_Flat/2026.3.23%20UAV%20Aerial%20Survey%20Point%20Distribution%20Map-1.png)
 
 Script `quick_read_plot_nanhui.m`
 
@@ -14,7 +14,7 @@ Image: ![](../images/raw_data_wells_nanhui.png)
 
 Are the data corrected for atmospheric pressure? Low-water suggests no, this variability looks like atmospheric pressure variability. Will need to correct. Ideally with the data from the met stations in the wetland, but look for public data for now.
 
-![](images/low_water_variability_sensor5.png)
+![](../images/low_water_variability_sensor5.png)
 
 
 ***
@@ -42,6 +42,15 @@ Tide data? Tidal predictions close to the wetland at the site: https://mds.nmdis
 Select predictions for: 芦潮港(南汇嘴)
 
 Script to download the tidal predictions: `downloadNMDISTides.m`
+
+```matlab
+ T = downloadNMDISTides( ...
+     'T067', ...
+     datetime(2026,4,1), ...
+     datetime(2026,6,1));
+```
+
+Script to download, and plot: `download_plot_tide_predictions_nanhui.m`
 
 
 
