@@ -8,13 +8,15 @@ Quickly look at data from Nanhui wetland. There are 12 sensors, recording pressu
 
 Script `quick_read_plot_nanhui.m`
 
-Image: ![](../images/raw_data_wells_nanhui.png)
+Image: 
+
+![](images/raw_data_wells_nanhui.png)
 
 ***
 
 Are the data corrected for atmospheric pressure? Low-water suggests no, this variability looks like atmospheric pressure variability. Will need to correct. Ideally with the data from the met stations in the wetland, but look for public data for now.
 
-![](../images/low_water_variability_sensor5.png)
+![](images/low_water_variability_sensor5.png)
 
 
 ***
