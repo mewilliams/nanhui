@@ -71,3 +71,4 @@ ylim([0 360])
 
 
 % saveas(gcf,'~/Research/notes/images/202607/atm_cond_pvg_airport_aprilmay2026.png')
+% saveas(gcf,'../images/atm_cond_pvg_airport_aprilmay2026.png')
