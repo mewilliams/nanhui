@@ -2,6 +2,8 @@
 % m williams
 % read data collected/sent by Zhi Li (Tongji University)
 
+set(0, 'DefaultAxesLineStyleOrder', {'-' '--'}); % make solid and then dashed line.
+
 clear
 close all
 
@@ -89,7 +91,7 @@ plot(dPVG.time+hours(8),dPVG.pressurePa,'k'), legend('P_{rel} + 101325 [Pa]','PV
 ylabel('Absolute Pressure [Pa]')
 
 
-d.PresAtm_PVG_Pa = interp1(ts_PVG,dPVG.pressurePa,ts_Nanhui_utc);
+% d.PresAtm_PVG_Pa = interp1(ts_PVG,dPVG.pressurePa,ts_Nanhui_utc);
 
 
 subplot(3,1,3)
@@ -98,7 +100,36 @@ ylabel('Absolute Pressure [Pa]')
 legend('Corrected')
 
 end
+
 linkaxes(ax,'x')
+
+
+return
+
+%%
+close all
+ixl = 1;
+for ix = [1 2 6 8 11]
+    fn = ['~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-',num2str(ix),'.csv'];
+    d = readtable(fn);
+
+    d.Pres_Pa = d.Pressure_WaterLevel_mmH_O_4_C_*conv_mmh2o_Pa; % conversion mm h2o to pascals
+    d.Pres_Pa_abs =d.Pres_Pa + 101325; % put atmospheric pressure back (const.
+ts_PVG = datenum(dPVG.time);
+ts_Nanhui_utc = datenum(d.Time) - 8/24; % fix time zone here. 
+
+d.PresAtm_PVG_Pa = interp1(ts_PVG,dPVG.pressurePa,ts_Nanhui_utc);
+figure(300)
+plot(d.Time,d.Pres_Pa_abs-d.PresAtm_PVG_Pa+101325), hold all
+ylabel('Absolute Pressure [Pa]')
+title('Corrected Sensor Pressure')
+legentry{ixl} = ['site ',num2str(ix)]
+ixl = ixl+1; % legend entry without having to start at index ix = 1.
+end
+legend(legentry)
+% legend('Corrected')
+
+
 
 
 % Need to compare to  芦潮港(南汇嘴)

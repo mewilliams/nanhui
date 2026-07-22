@@ -13,6 +13,24 @@ dat = readtable('../external_data/ZSPD_9_CN_20260401_to_20260601.csv');
 dat.tempC = (dat.temp - 32)*5/9; % F to C
 dat.pressurePa = dat.pressure*3386.39; % inches of mercury to pascals
 dat.wspd_ms = dat.wspd*0.44704; % mph to meters per second (wind)
+
+
+% %U (East-West Component): U=−S×sin⁡(Φ)U=−S×sin(Φ)
+% V (North-South Component): V=−S×cos⁡(Φ)V=−S×cos(Φ)
+% Where:
+% SS is the wind speed in m/s.
+% ΦΦ is the meteorological wind direction angle in radians.
+% Make sure to convert the wind direction angle from degrees to radians before using these formulas. The atan2 function can also be used to compute the wind direction angle from the U and V components.
+dat.Uw_ms = -1*dat.wspd_ms.*sind(dat.wdir);
+dat.Vw_ms = -1*dat.wspd_ms.*cosd(dat.wdir);
+
+% check the conversion is ok:
+figure
+plot(sqrt(dat.Uw_ms.^2 + dat.Vw_ms.^2),'k')
+hold all
+plot(dat.wspd_ms,'--')
+
+
 %%
 figure
 subplot(4,1,1)
