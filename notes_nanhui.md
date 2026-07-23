@@ -107,4 +107,35 @@ Questions:
 -  How does the sensor zero the pressure? I assumed/guessed standard atmosphere, but it might take a reading at the moment of start and zero from there. 
 
 
+***
+
+##### 23 July 2026
+
+###### Convert conductivity and temperature to salinity and density
+
+Use Gibbs Seawater Toolbox (https://teos-10.org/pubs/gsw/html/gsw_contents.html) to convert to absolute salinity (g/kg) and rho (kg/m3).
+
+Script: `scripts/convert_sensor_T_C_to_rho_S.m`
+
+Data from 11 sensors. Conductivity on the sensor at site 3 is bad, the temperature at that site also looks weird, have omitted it here:
+
+![](images/S_T_rho_11sites_aprmay2026.png)
+
+We can look at the S-T diagram to see if there are identifiable water masses. Not sure it tells us much. 
+
+![](images/salinity_temperature_diagram.png)
+
+Some observations on the salinity data. Salinity is obviously tidally variable at three sites:
+
+![](images/salinity_tidally_variability_3sites.png)
+
+And, at four (or five) sites, there was a clear salinity peak near 14 May.
+
+![](images/salinity_peak_14may2026.png). 
+
+Looking at the other variables for that range - there is a transition in temperature from smooth (non-tidal) to perhaps tidal that occurs with this event.
+
+![](images/site7_S_T_rho_11_21may2026.png)..
+
+
 
