@@ -14,7 +14,7 @@ close all
 addpath(genpath('~/Research/general_scripts/matlabfunctions/gsw/'));
 
 ixl = 1;
-for ix = [7]
+for ix = [8]
     fn = ['~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-',num2str(ix),'.csv'];
     d = readtable(fn);
 
