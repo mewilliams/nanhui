@@ -146,7 +146,11 @@ Stations 1:5 (transect across flat)
 
 ##### 24 July 2026
 
-Quick literature search - short term processes, intertidal flat monitoring...
+Questions: 
+- What does the literature say about short term processes and their influence on intertidal flat hydrology, salt transport, and heat flux? 
+- What is the ocean boundary condition at Nanhui wetland - tides, salinity, general dynamics of the East China Sea and the Changjiang plume? 
+
+A quick literature search, some possibly useful references:
 
 ###### Tides, storm surge
 
@@ -180,11 +184,9 @@ Kim, T. W., & Cho, Y. K. (2009). Heat flux across the surface of a macrotidal fl
 
 ###### East China Sea oceanography 
 
+Mo, D., Li, J., Hou, Y., & Hu, P. (2023). Modeling the sea level response of the northern East China Sea to different types of extratropical cyclones. Journal of Geophysical Research: Oceans, 128, e2022JC018728. https://doi.org/10.1029/2022JC018728 
 
-
- Mo, D., Li, J., Hou, Y., & Hu, P. (2023). Modeling the sea level response of the northern East China Sea to different types of extratropical cyclones. Journal of Geophysical Research: Oceans, 128, e2022JC018728. https://doi.org/10.1029/2022JC018728 
-
- Lozovatsky, I., Liu, Z., Wei, H., & Fernando, H. J. S. (2008). Tides and mixing in the northwestern East China Sea Part I: Rotating and reversing tidal flows. Continental Shelf Research, 28(2), 318-337.
+Lozovatsky, I., Liu, Z., Wei, H., & Fernando, H. J. S. (2008). Tides and mixing in the northwestern East China Sea Part I: Rotating and reversing tidal flows. Continental Shelf Research, 28(2), 318-337.
 
 Guo, X., & Yanagi, T. (1998). Three-dimensional structure of tidal current in the East China Sea and the Yellow Sea. Journal of Oceanography, 54(6), 651-668.
 
