@@ -212,3 +212,27 @@ This one indicates that there is always CDW at the Nanhui wetland:
 Wu, T., & Wu, H. (2018). Tidal mixing sustains a bottom-trapped river plume and buoyant coastal current on an energetic continental shelf. Journal of Geophysical Research: Oceans, 123, 8026–8051. https://doi.org/10.1029/2018JC014105 
 
 Son YB and Choi J-K (2022) Mapping the Changjiang Diluted Water in the East China Sea during summer over a 10-year period using GOCI satellite sensor data. Front. Mar. Sci. 9:1024306. doi: 10.3389/fmars.2022.1024306
+
+###### Nanhui Wetland literature
+
+
+This one has ADV measurements (across one tidal period?), in Chinese: 
+Minghui, C. U. I., et al. "Wave characteristics and their influencing factors on Nanhui tidal flats in the Changjiang Estuary." Journal of Marine Sciences 41.2 (2023): 28-44.
+
+Wang, Jie, et al. "Coastal engineering structures bifurcate intertidal eco‐morphodynamic trajectories in a sediment‐starved delta." Sedimentology 73.2 (2026): 560-587.
+
+Dong, Haoyu, et al. "Evaluation of the carbon accumulation capability and carbon storage of different types of wetlands in the Nanhui tidal flat of the Yangtze River estuary." Environmental Monitoring and Assessment 192.9 (2020): 585.
+
+Du, Xinglin, et al. "Effects of variations in hydrological connectivity on the macrobenthic community structure in reclaimed wetlands." Science of the Total Environment 954 (2024): 176111.
+
+Liu, Jinlin, et al. "Exploration and implication of green macroalgal proliferation in the Nanhui-east-tidal-flat: an investigation of post-reclamation mudflat wetlands." Frontiers in Marine Science 12 (2025): 1505586
+
+Wu, Mingxuan, et al. "Does soil pore water salinity or elevation influence vegetation spatial patterns along coasts? A case study of restored coastal wetlands in Nanhui, Shanghai." Wetlands 40.6 (2020): 2691-2700.
+
+Li, Chengwei, et al. "Soil characteristics and their potential thresholds associated with Scirpus mariqueter distribution on a reclaimed wetland coast." Journal of Coastal Conservation 6 (2018): 1107-1116.
+
+Gao, Xiaofeng, et al. "The above and the belowground nitrogen allocation strategy of Scirpus mariqueter based on 15N isotope tracing along an elevation gradient and its significance for coastal wetlands restoration." Journal of Plant Nutrition and Soil Science 187.4 (2024): 504-515.
+
+Zhang, Xiaodong, et al. "Spatial-temporal evolution of the eastern Nanhui mudflat in the Changjiang (Yangtze River) Estuary under intensified human activities." Geomorphology 309 (2018): 38-50.
+
+Wei, Taoyuan, et al. "Non-flood season neap tides in the Yangtze estuary offshore: Flow mixing processes and its potential impacts on adjacent wetlands." Physics and Chemistry of the Earth, Parts A/B/C 103 (2018): 127-139.
