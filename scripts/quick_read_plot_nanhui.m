@@ -111,7 +111,7 @@ return
 %%
 close all
 ixl = 1;
-for ix = [1 2 6 8 11]
+for ix = [1 2 3 4 5]
     fn = ['~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-',num2str(ix),'.csv'];
     d = readtable(fn);
 

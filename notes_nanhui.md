@@ -135,7 +135,78 @@ And, at four (or five) sites, there was a clear salinity peak near 14 May.
 
 Looking at the other variables for that range - there is a transition in temperature from smooth (non-tidal) to perhaps tidal that occurs with this event.
 
-![](images/site7_S_T_rho_11_21may2026.png)..
+![](images/site7_S_T_rho_11_21may2026.png).
+
+
+***
+
+Stations 1:5 (transect across flat)
+![](images/transect_S_T_rho.png)
+
+
+##### 24 July 2026
+
+Quick literature search - short term processes, intertidal flat monitoring...
+
+###### Tides, storm surge
+
+Heiss, J. W., Post, V. E. A., Laattoe, T., Russoniello, C. J., & Michael, H. A. (2017). Physical controls on biogeochemical processes in intertidal zones of beach aquifers. Water Resources Research, 53, 9225–9244. https://doi.org/10.1002/2017WR021110 
+
+Huizer, S., M. C. Karaoulis, G. H. P. Oude Essink, and M. F. P. Bierkens (2017), Monitoring and simulation of salinity changes in response to tide and storm surges in a sandy coastal aquifer system, Water Resour. Res., 53, 6487–6509, doi:10.1002/2016WR020339. 
+
+Kim, K. H., Heiss, J. W., Michael, H. A., Cai, W.-J., Laattoe, T., Post, V. E. A., & Ullman, W. J. (2017). Spatial patterns of groundwater biogeochemical reactivity in an intertidal beach aquifer. Journal of Geophysical Research: Biogeosciences, 122, 2548–2562. https://doi.org/10.1002/2017JG003943 
+
+Fu, T., Zhang, Y., Guo, X., Xing, C., Xiao, X., Lei, B., ... & Li, M. (2024). Salt transport dynamics across the sediment-underground brine interface driven by tidal hydrology and benthic crab burrowing in muddy tidal flats. Estuarine, Coastal and Shelf Science, 296, 108586.
+
+Holt, T., Seibert, S. L., Greskowiak, J., Freund, H., & Massmann, G. (2017). Impact of storm tides and inundation frequency on water table salinity and vegetation on a juvenile barrier island. Journal of Hydrology, 554, 666-679.
+
+Turner, I. L. (1998). Monitoring groundwater dynamics in the littoral zone at seasonal, storm, tide and swash frequencies. Coastal Engineering, 35(1-2), 1-16.
+
+Cantelon, J. A., Robinson, C. E., & Kurylyk, B. L. (2023). Morphologic, atmospheric, and oceanic drivers cause multi‐temporal saltwater intrusion on a remote, sand island. Water Resources Research, 59(10), e2023WR035820.
+
+Wilson, A. M., & Morris, J. T. (2012). The influence of tidal forcing on groundwater flow and nutrient exchange in a salt marsh-dominated estuary. Biogeochemistry, 108(1), 27-38.
+
+###### Heat flux, heat balance
+
+Rinehimer, J. P., & Thomson, J. T. (2014). Observations and modeling of heat fluxes on tidal flats. Journal of Geophysical Research: Oceans, 119(1), 133-146.
+
+Liu, Q., Polerecky, L., Rios‐Yunes, D., & Soetaert, K. (2025). Simulating the thermal response of tidal sediments by integrating numerical modeling and field measurements. Journal of Geophysical Research: Oceans, 130(10), e2025JC023263.
+
+Rinehimer, J. P., Thomson, J., & Chickadel, C. C. (2013). Thermal observations of drainage from a mud flat. Continental Shelf Research, 60, S125-S135.
+
+Kong, G., Li, L., & Guan, W. (2022). Influences of tidal flat and thermal discharge on heat dynamics in xiangshan bay. Frontiers in Marine Science, 9, 850672.
+
+Kim, T. W., & Cho, Y. K. (2009). Heat flux across the surface of a macrotidal flat in southwest Korea. Journal of Geophysical Research: Oceans, 114(C7).
+
+###### East China Sea oceanography 
 
 
 
+ Mo, D., Li, J., Hou, Y., & Hu, P. (2023). Modeling the sea level response of the northern East China Sea to different types of extratropical cyclones. Journal of Geophysical Research: Oceans, 128, e2022JC018728. https://doi.org/10.1029/2022JC018728 
+
+ Lozovatsky, I., Liu, Z., Wei, H., & Fernando, H. J. S. (2008). Tides and mixing in the northwestern East China Sea Part I: Rotating and reversing tidal flows. Continental Shelf Research, 28(2), 318-337.
+
+Guo, X., & Yanagi, T. (1998). Three-dimensional structure of tidal current in the East China Sea and the Yellow Sea. Journal of Oceanography, 54(6), 651-668.
+
+
+##### Yangtze / Changjiang River Plume
+
+Lee, S. W., Lee, D., Noh, S., Kim, G. U., Park, S. H., Jeong, J. Y., ... & Choi, J. Y. (2025). Sequential evolution of Changjiang Diluted Water and its impact on stratification and phytoplankton blooms in the East China Sea during summer 2020. Journal of Geophysical Research: Oceans, 130(8), e2025JC022655.
+
+Cheng, P. (2024). Dispersal of the Changjiang River water in East Asian shelf seas. Journal of Geophysical Research: Oceans, 129(12), e2024JC021351.
+
+Liu, Z., Gan, J., Wu, H., Hu, J., Cai, Z., & Deng, Y. (2021). Advances on coastal and estuarine circulations around the Changjiang Estuary in the recent decades (2000–2020). Frontiers in Marine Science, 8, 615929.
+
+Li, X., Gong, X., & Yuan, D. (2026). Seasonal and interannual variations of the Changjiang Diluted Water in the East China Sea observed by the SMAP satellite. Journal of Geophysical Research: Oceans, 131(3), e2024JC022215.
+
+Huang, R., Jiang, L., Cheng, X., & Burchard, H. (2025). Bifurcated upshelf extension of the Yangtze River plume. Journal of Geophysical Research: Oceans, 130(10), e2025JC022937.
+
+Zhang, Z., Wu, H., Yin, X., & Qiao, F. (2018). Dynamical response of Changjiang River plume to a severe typhoon with the surface wave‐induced mixing. Journal of Geophysical Research: Oceans, 123(12), 9369-9388.
+
+Guan, S., Huang, M., Lin, II. et al. Widespread sea surface salinification induced by tropical cyclones over the Changjiang River Plume. Commun Earth Environ 6, 337 (2025). https://doi.org/10.1038/s43247-025-02317-xs
+
+
+This one indicates that there is always CDW at the Nanhui wetland: 
+Wu, T., & Wu, H. (2018). Tidal mixing sustains a bottom-trapped river plume and buoyant coastal current on an energetic continental shelf. Journal of Geophysical Research: Oceans, 123, 8026–8051. https://doi.org/10.1029/2018JC014105 
+
+Son YB and Choi J-K (2022) Mapping the Changjiang Diluted Water in the East China Sea during summer over a 10-year period using GOCI satellite sensor data. Front. Mar. Sci. 9:1024306. doi: 10.3389/fmars.2022.1024306
