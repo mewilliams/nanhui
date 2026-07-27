@@ -36,7 +36,7 @@ for ix = [ 3 7 9 12 ]
     ylabel('T [^oC]')
     ax(3) = subplot(3,1,3);
     plot(d.Time,d.Conductivity__S_cm_), hold all
-    ylabel('C [S/cm]')
+    ylabel('C [\mu S/cm]')
 
 legentry{ixl} = ['site ',num2str(ix)]
 ixl = ixl+1; % legend entry without having to start at index ix = 1.
