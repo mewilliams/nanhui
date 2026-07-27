@@ -247,23 +247,40 @@ Wei, Taoyuan, et al. "Non-flood season neap tides in the Yangtze estuary offshor
 
 ###### What are the next steps with this data?
 
-First, data quality control, setting everything into a uniform (vertical) datum. 
+First, *data quality control*, setting everything into a uniform (vertical) datum. 
 
 - Pressure sensors should be corrected for atmospheric pressure using the wetland meteorological station (relative pressure = absolute pressure - atmospheric pressure). It would be good to compare the wetland meteorological station with the data at PVG or other publicly available data. Does the Key Lab for Marine Geology have a met station? Best is to have your own (high frequency) data, but in case of likely data gaps (e.g. charging the met station), a validation/comparison of the local data to some other data is also fine (so long as they agree). Also need to take into account how the pressure sensor is 'zeroing' the pressure. Most likely when the sensor is programmed, there is either automatic or manual setting of atmospheric pressure. In the script above I subtracted standard atmosphere (101325 Pa) and it matches up pretty well, but maybe not perfectly. Generally when the sensor is installed, you'll see an offset of a few hundred pascals, I usually verify that the offset is similar on deployment and recovery and remove it. Though, since these are subsurface sensors relative pressure could be a little negative... 
 
 - Map vertical positions of sensors. If you didn't have elevations, I would start by assuming that at high tide the water surface is flat, and adjust sensor vertical position z accordingly. Since you have topography and (I hope) sensor position below the surface, start with these data and compare to the assumption above. 
 
-- Decide if it is easier to work in pressure (Pa, dbar, etc.) or in column of water (m). If column of water: you'll need to convert from p to h, best practice would be to convert temperature and conductivity to water density and use the local value for the column of water. Realistically, the difference using the measurements instead of setting a fixed water density (e.g. rho = 1005 kg/m3) will be small
+- Decide if it is easier to work in pressure (Pa, dbar, etc.) or in column of water (m). If column of water: you'll need to convert from p to h, best practice would be to convert temperature and conductivity to water density and use the local value for the column of water. Realistically, the difference using the measurements instead of setting a fixed water density (e.g. rho = 1005 kg/m3) will be small.
+
+- To convert C and T to salinity and density, use Gibbs Seawater Toolbox (available in matlab, C, Fortran, Julia, etc: https://teos-10.org/software.htm)
+
+- Quality control on C and T: You should do a bucket test when the sensors are recovered: put all the sensors (recording) into a water tank with well mixed (uniform T) water. Mix in salt to have several data points. Ideally all of the sensors should give the same values of P, C and T. If not, troubleshoot from there. An in-field test option is to put all the sensors together and see how they compare - but this is easier in an estuary than on a tidal flat with 4m tides. 
+
+- Sensor time zone: pick either local time or UTC to maintain all your data. I prefer UTC because there is no daylight savings (I don't know if China changes clocks in summer) and most science-quality public data is in UTC. That said, since Shanghai is UTC+8, local time is more useful if you're trying to interpret a plot of diurnal water temperature. The tide predictions I found are given in local time. Make sure to always label dataset time with the time zone.
 
 
+Next, *comparison data*. What are the forcings or boundary conditions for this wetland? At a minimum, the following:
+
+- tidal water level (actual data, not predictions)
+- ocean wave climate
+- wind speed and direction
+
+It would be nice to have ocean temperature and (surface?) salinity near your site.
+
+Review the literature for East China Sea processes. Does the Yangtze plume affect the water level? Does the Yangtze streamflow need to be taken into consideration?
+
+Data sources: First, look for buoys and port data. Ocean wave climate (and wind) - you can look at climate reanalysis products - e.g. ERA5. NOAA has a global Wave Watch III product as well. 
 
 
-
+Then, use your measurements and the comparison data to begin to ask questions of the observational dataset:
 
 
 First questions to ask of this dataset:
 
-What physical processes control water balance / water flux in this wetland? At site 5 the tide dominance is clear, the tide measured varies. See images below: low tide, high tide. 
+- What physical processes control water balance / water flux in this wetland? At site 5 the tide dominance is clear, the tide measured varies. See images below: low tide, high tide. 
 
 ![](images/site5_lowtide_waterheight.png)
 
@@ -279,3 +296,8 @@ Site 11:
 Site 6: 
 
 ![](images/site6_waterheight.png)
+
+
+- Given your study, beyond that probably the next question is about salt movement. Similar question could just be 'what physical processes control the salt balance/flux?'
+
+- And, since you have nice temperature data - what controls the heat flux? 

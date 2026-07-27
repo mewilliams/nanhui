@@ -56,7 +56,7 @@ linkaxes(ax,'x')
 %%
 clear ax
 close all
-for ix = 5
+for ix = 6
     fn = ['~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-',num2str(ix),'.csv'];
     d = readtable(fn);
 
@@ -103,17 +103,27 @@ subplot(3,1,3)
 plot(d.Time,d.Pres_Pa_abs-d.PresAtm_PVG_Pa+101325), hold all
 ylabel('Absolute Pressure [Pa]')
 legend('Corrected')
-
-end
-
 linkaxes(ax,'x')
+
 
 
 figure
 plot(d.Time,(d.Pres_Pa_abs-d.PresAtm_PVG_Pa)/(9.8*1005)), hold all
-title('site 5')
+title(['site ',num2str(ix)])
 ylabel('water height [m]')
 legend('assumes density = 1005 kg/m3')
+
+
+
+end
+
+
+% 
+% figure
+% plot(d.Time,(d.Pres_Pa_abs-d.PresAtm_PVG_Pa)/(9.8*1005)), hold all
+% title(['site ',num2str(ix)])
+% ylabel('water height [m]')
+% legend('assumes density = 1005 kg/m3')
 
 
 return
