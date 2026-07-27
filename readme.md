@@ -4,7 +4,7 @@ Script and notes for a quick look at Nanhui wetland data.
 Local file structure is the following: 
 
 ```bash
-$ tree -d
+nanhui $ tree -d
 .
 ├── Sampling_Data_of_Nanhui_Tidal_Flat
 ├── edited_data
