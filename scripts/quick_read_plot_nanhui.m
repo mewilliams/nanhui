@@ -109,6 +109,13 @@ end
 linkaxes(ax,'x')
 
 
+figure
+plot(d.Time,(d.Pres_Pa_abs-d.PresAtm_PVG_Pa)/(9.8*1005)), hold all
+title('site 5')
+ylabel('water height [m]')
+legend('assumes density = 1005 kg/m3')
+
+
 return
 
 %%

@@ -6,11 +6,13 @@ Quickly look at data from Nanhui wetland. There are 12 sensors, recording pressu
 
 ![](Sampling_Data_of_Nanhui_Tidal_Flat/2026.3.23%20UAV%20Aerial%20Survey%20Point%20Distribution%20Map-1.png)
 
-Script `quick_read_plot_nanhui.m`
+Script `quick_read_plot_nanhui.m`:
 
 Image: 
 
 ![](images/raw_data_wells_nanhui.png)
+
+Data show: 12 sensors, pressure, temperature, and conductivity. Pressure: some stations have large tides, others no tide present. Temperature - warming from April to May, though not always positive dT/dt. Conductivity: sensor at site 3 looks like bad data. Sites 3 and 8 have temperature a little outside of the range of the other values - may also be suspect data. 
 
 ***
 
@@ -236,3 +238,44 @@ Gao, Xiaofeng, et al. "The above and the belowground nitrogen allocation strateg
 Zhang, Xiaodong, et al. "Spatial-temporal evolution of the eastern Nanhui mudflat in the Changjiang (Yangtze River) Estuary under intensified human activities." Geomorphology 309 (2018): 38-50.
 
 Wei, Taoyuan, et al. "Non-flood season neap tides in the Yangtze estuary offshore: Flow mixing processes and its potential impacts on adjacent wetlands." Physics and Chemistry of the Earth, Parts A/B/C 103 (2018): 127-139.
+
+
+
+***
+
+##### 27 July 2026
+
+###### What are the next steps with this data?
+
+First, data quality control, setting everything into a uniform (vertical) datum. 
+
+- Pressure sensors should be corrected for atmospheric pressure using the wetland meteorological station (relative pressure = absolute pressure - atmospheric pressure). It would be good to compare the wetland meteorological station with the data at PVG or other publicly available data. Does the Key Lab for Marine Geology have a met station? Best is to have your own (high frequency) data, but in case of likely data gaps (e.g. charging the met station), a validation/comparison of the local data to some other data is also fine (so long as they agree). Also need to take into account how the pressure sensor is 'zeroing' the pressure. Most likely when the sensor is programmed, there is either automatic or manual setting of atmospheric pressure. In the script above I subtracted standard atmosphere (101325 Pa) and it matches up pretty well, but maybe not perfectly. Generally when the sensor is installed, you'll see an offset of a few hundred pascals, I usually verify that the offset is similar on deployment and recovery and remove it. Though, since these are subsurface sensors relative pressure could be a little negative... 
+
+- Map vertical positions of sensors. If you didn't have elevations, I would start by assuming that at high tide the water surface is flat, and adjust sensor vertical position z accordingly. Since you have topography and (I hope) sensor position below the surface, start with these data and compare to the assumption above. 
+
+- Decide if it is easier to work in pressure (Pa, dbar, etc.) or in column of water (m). If column of water: you'll need to convert from p to h, best practice would be to convert temperature and conductivity to water density and use the local value for the column of water. Realistically, the difference using the measurements instead of setting a fixed water density (e.g. rho = 1005 kg/m3) will be small
+
+
+
+
+
+
+
+First questions to ask of this dataset:
+
+What physical processes control water balance / water flux in this wetland? At site 5 the tide dominance is clear, the tide measured varies. See images below: low tide, high tide. 
+
+![](images/site5_lowtide_waterheight.png)
+
+![](images/site5_hightide_waterheight.png)
+
+
+Farther up the flat, still see tides, but need to quantify when and how the flooding / draining is changed.
+
+Site 11:
+
+![](images/site11_waterheight.png)
+
+Site 6: 
+
+![](images/site6_waterheight.png)
