@@ -67,6 +67,7 @@ Use the tide data to verify the timezone of the raw data. Shanghai local time is
 
 ![](images/timezone_check_data_nanhui.png)
 
+***
 
 ##### 22 July 2026
 
@@ -145,6 +146,7 @@ Looking at the other variables for that range - there is a transition in tempera
 Stations 1:5 (transect across flat)
 ![](images/transect_S_T_rho.png)
 
+***
 
 ##### 24 July 2026
 
