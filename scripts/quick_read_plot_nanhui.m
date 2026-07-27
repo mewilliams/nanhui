@@ -21,7 +21,7 @@ d = readtable('~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-202
 d = readtable('~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-1.csv');
 
 ixl = 1;
-for ix = [ 3 7 9 12 ]
+for ix = [ 1:12 ]
     fn = ['~/Research/nanhui/Sampling_Data_of_Nanhui_Tidal_Flat/20260419-20260529-',num2str(ix),'.csv'];
 
     d = readtable(fn);
@@ -36,7 +36,7 @@ for ix = [ 3 7 9 12 ]
     ylabel('T [^oC]')
     ax(3) = subplot(3,1,3);
     plot(d.Time,d.Conductivity__S_cm_), hold all
-    ylabel('C [\mu S/cm]')
+    ylabel('C [\muS/cm]')
 
 legentry{ixl} = ['site ',num2str(ix)]
 ixl = ixl+1; % legend entry without having to start at index ix = 1.
@@ -49,7 +49,10 @@ ylim([15 23])
 
 linkaxes(ax,'x')
 
-% return;
+% saveas(gcf,'../images/raw_data_wells_nanhui.png')
+
+
+ return;
 %%
 clear ax
 close all
