@@ -174,6 +174,8 @@ Cantelon, J. A., Robinson, C. E., & Kurylyk, B. L. (2023). Morphologic, atmosphe
 
 Wilson, A. M., & Morris, J. T. (2012). The influence of tidal forcing on groundwater flow and nutrient exchange in a salt marsh-dominated estuary. Biogeochemistry, 108(1), 27-38.
 
+Gao, Y., Li, X., Chen, X. et al. Extreme wave and storm surge characteristics in the southeastern coastal and offshore regions of China. Sci Rep 15, 26915 (2025). https://doi.org/10.1038/s41598-025-09737-x
+
 ###### Heat flux, heat balance
 
 Rinehimer, J. P., & Thomson, J. T. (2014). Observations and modeling of heat fluxes on tidal flats. Journal of Geophysical Research: Oceans, 119(1), 133-146.
