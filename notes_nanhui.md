@@ -176,6 +176,14 @@ Wilson, A. M., & Morris, J. T. (2012). The influence of tidal forcing on groundw
 
 Gao, Y., Li, X., Chen, X. et al. Extreme wave and storm surge characteristics in the southeastern coastal and offshore regions of China. Sci Rep 15, 26915 (2025). https://doi.org/10.1038/s41598-025-09737-x
 
+Wang, K., Hou, Y., Li, S., Du, M., Chen, J., & Lu, J. (2020). A comparative study of storm surge and wave setup in the East China Sea between two severe weather events. Estuarine, Coastal and Shelf Science, 235, 106583. 
+
+* Wang et al. 2020 includes locations / measurements of wave buoys. 
+
+This paper has locations of 15 tide gauges on the coast of China: 
+
+Feng, Jianlong & Li, Huan & Li, Delei & Liu, Qiulin & Wang, Hui & Liu, Kexiu. (2018). Changes of Extreme Sea Level in 1.5 and 2.0°C Warmer Climate Along the Coast of China. Frontiers in Earth Science. 6. 10.3389/feart.2018.00216. 
+
 ###### Heat flux, heat balance
 
 Rinehimer, J. P., & Thomson, J. T. (2014). Observations and modeling of heat fluxes on tidal flats. Journal of Geophysical Research: Oceans, 119(1), 133-146.
@@ -268,8 +276,8 @@ First, *data quality control*, setting everything into a uniform (vertical) datu
 
 Next, *comparison data*. What are the forcings or boundary conditions for this wetland? At a minimum, the following:
 
-- tidal water level (actual data, not predictions)
-- ocean wave climate
+- tidal water level (actual data, not predictions). should be a tide gauge at Daishan (岱山潮汐表?)
+- ocean wave climate (maybe here: http://www.qdio.ac.cn/oonmc/)
 - wind speed and direction
 
 It would be nice to have ocean temperature and (surface?) salinity near your site.
@@ -305,3 +313,13 @@ Site 6:
 - Given your study, beyond that probably the next question is about salt movement. Similar question could just be 'what physical processes control the salt balance/flux?'
 
 - And, since you have nice temperature data - what controls the heat flux? 
+
+
+***
+
+
+##### 28 July 2026
+
+Oceanographic data maybe here: https://data.cma.cn/dataService/cdcindex/datacode/C.0017.0010.S001/show_value/normal.html  
+
+Requires registering for the site to access. 
